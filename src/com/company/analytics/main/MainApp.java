@@ -1,0 +1,21 @@
+package com.company.analytics.main;
+
+import com.company.analytics.sales.SalesReport;
+import com.company.analytics.hr.EmployeeReport;
+
+public class MainApp {
+
+    public static void main(String[] args) {
+
+        SalesReport sales = new SalesReport();
+        EmployeeReport emp = new EmployeeReport();
+
+        System.out.println("===== Company Combined Report =====\n");
+
+        sales.printSalesReport();
+
+        System.out.println();
+
+        emp.printEmployeeReport();
+    }
+}
